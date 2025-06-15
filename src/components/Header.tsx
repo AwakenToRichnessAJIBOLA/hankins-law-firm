@@ -1,90 +1,124 @@
 
-import { Bell, User, Settings, LogOut } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { gavel, home } from "lucide-react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
-            <span className="text-navy-900 font-bold text-sm">PB</span>
+    <header className="bg-white shadow-lg sticky top-0 z-50">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="w-10 h-10 gold-gradient rounded-full flex items-center justify-center">
+              <gavel className="h-6 w-6 text-navy-900" />
+            </div>
+            <div>
+              <h1 className="font-display font-bold text-2xl text-navy-900">
+                Hankins Law Firm
+              </h1>
+              <p className="text-xs text-navy-600 -mt-1">Fighting for Justice</p>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex space-x-8">
+            <Link
+              to="/"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/practice-areas"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              Practice Areas
+            </Link>
+            <Link
+              to="/testimonials"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              Testimonials
+            </Link>
+            <Link
+              to="/attorneys"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              Attorneys
+            </Link>
+            <Link
+              to="/blog"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              Resources
+            </Link>
+            <Link
+              to="/contact"
+              className="text-navy-700 hover:text-gold-600 font-medium transition-colors"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden lg:block">
+            <Button className="gold-gradient text-navy-900 font-semibold hover:opacity-90">
+              Free Consultation
+            </Button>
           </div>
-          <span className="font-display font-bold text-xl text-navy-900">
-            PremiumBank
-          </span>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden text-navy-700"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-navy-700 hover:text-navy-900 font-medium transition-colors">
-            Dashboard
-          </a>
-          <a href="#" className="text-navy-600 hover:text-navy-900 font-medium transition-colors">
-            Accounts
-          </a>
-          <a href="#" className="text-navy-600 hover:text-navy-900 font-medium transition-colors">
-            Cards
-          </a>
-          <a href="#" className="text-navy-600 hover:text-navy-900 font-medium transition-colors">
-            Loans
-          </a>
-          <a href="#" className="text-navy-600 hover:text-navy-900 font-medium transition-colors">
-            Support
-          </a>
-        </nav>
-
-        {/* User Actions */}
-        <div className="flex items-center space-x-4">
-          {/* Notifications */}
-          <Button variant="ghost" size="icon" className="relative text-navy-600 hover:text-navy-900">
-            <Bell className="h-5 w-5" />
-            <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 bg-red-500 text-white text-xs">
-              3
-            </Badge>
-          </Button>
-
-          {/* User Menu */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center space-x-2 text-navy-700 hover:text-navy-900">
-                <div className="w-8 h-8 bg-navy-100 rounded-full flex items-center justify-center">
-                  <User className="h-4 w-4 text-navy-700" />
-                </div>
-                <span className="hidden md:block font-medium">John Smith</span>
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="lg:hidden py-4 border-t">
+            <nav className="flex flex-col space-y-4">
+              <Link to="/" className="text-navy-700 hover:text-gold-600 font-medium">
+                Home
+              </Link>
+              <Link to="/about" className="text-navy-700 hover:text-gold-600 font-medium">
+                About Us
+              </Link>
+              <Link to="/practice-areas" className="text-navy-700 hover:text-gold-600 font-medium">
+                Practice Areas
+              </Link>
+              <Link to="/testimonials" className="text-navy-700 hover:text-gold-600 font-medium">
+                Testimonials
+              </Link>
+              <Link to="/attorneys" className="text-navy-700 hover:text-gold-600 font-medium">
+                Attorneys
+              </Link>
+              <Link to="/blog" className="text-navy-700 hover:text-gold-600 font-medium">
+                Resources
+              </Link>
+              <Link to="/contact" className="text-navy-700 hover:text-gold-600 font-medium">
+                Contact
+              </Link>
+              <Button className="gold-gradient text-navy-900 font-semibold w-full mt-4">
+                Free Consultation
               </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-56 bg-white border border-slate-200">
-              <div className="px-2 py-1.5">
-                <p className="text-sm font-medium text-navy-900">John Smith</p>
-                <p className="text-xs text-navy-600">john.smith@email.com</p>
-              </div>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-navy-700 hover:text-navy-900">
-                <User className="mr-2 h-4 w-4" />
-                Profile
-              </DropdownMenuItem>
-              <DropdownMenuItem className="text-navy-700 hover:text-navy-900">
-                <Settings className="mr-2 h-4 w-4" />
-                Settings
-              </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-red-600 hover:text-red-700">
-                <LogOut className="mr-2 h-4 w-4" />
-                Sign out
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
