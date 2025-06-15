@@ -42,18 +42,18 @@ const PracticeAreasPreview = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {practiceAreas.map((area, i) => (
-            <div key={area.title} className="hover-lift transition-shadow duration-200">
+            <div key={area.title} className="hover-lift transition-shadow duration-200 h-full">
               <Card 
-                className="bg-gradient-to-br from-teal-400 via-cyan-400 to-blue-400 border-transparent shadow-lg animate-fade-in"
+                className="bg-gradient-to-br from-teal-400 via-cyan-400 to-blue-400 border-transparent shadow-lg animate-fade-in flex flex-col h-full min-h-[320px]"
                 style={{ animationDelay: `${0.07 * i}s`, animationFillMode:'both' }}
               >
-                <CardHeader className="text-center">
+                <CardHeader className="text-center flex-grow">
                   <div className="text-4xl mb-4">{area.icon}</div>
                   <CardTitle className="text-xl font-bold text-white drop-shadow">
                     {area.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col justify-center flex-grow">
                   <p className="text-white/90 text-center drop-shadow">{area.description}</p>
                 </CardContent>
               </Card>
@@ -74,4 +74,3 @@ const PracticeAreasPreview = () => {
 };
 
 export default PracticeAreasPreview;
-
