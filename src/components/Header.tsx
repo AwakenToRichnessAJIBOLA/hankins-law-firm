@@ -11,19 +11,19 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 animate-fade-in">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-20 md:h-32">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/" className="flex items-center space-x-2 md:space-x-3 group flex-shrink-0">
             <img
               src={logoSrc}
               alt="Hankins Law Firm logo"
-              className="h-40 w-40 object-contain group-hover:scale-105 transition-transform"
+              className="h-12 w-12 md:h-40 md:w-40 object-contain group-hover:scale-105 transition-transform"
             />
-            <div>
-              <h1 className="font-display font-bold text-2xl text-teal-800 group-hover:text-teal-600 transition-colors">
+            <div className="min-w-0">
+              <h1 className="font-display font-bold text-sm md:text-2xl text-teal-800 group-hover:text-teal-600 transition-colors whitespace-nowrap">
                 Hankins Law Firm
               </h1>
-              <p className="text-xs text-teal-600 -mt-1">Fighting for Justice</p>
+              <p className="text-xs text-teal-600 -mt-1 hidden md:block">Fighting for Justice</p>
             </div>
           </Link>
 
@@ -85,7 +85,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden text-teal-800"
+            className="lg:hidden text-teal-800 flex-shrink-0"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
