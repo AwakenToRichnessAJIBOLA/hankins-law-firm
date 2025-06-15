@@ -55,19 +55,19 @@ const About = () => {
                     <div className="md:col-span-1">
                       <img
                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                        alt="James Hankins, Founding Partner"
+                        alt="John Hankins, Founding Partner"
                         className="rounded-lg w-full"
                       />
                     </div>
                     <div className="md:col-span-2">
                       <h2 className="font-display text-3xl font-bold text-navy-900 mb-4">
-                        James Hankins, Esq.
+                        John Hankins, Esq.
                       </h2>
                       <p className="text-gold-600 font-semibold mb-4">Founding Partner</p>
                       <p className="text-gray-600 mb-6">
-                        James Hankins founded Hankins Law Firm in 2004 with a simple mission:
+                        John Hankins founded Hankins Law Firm in 2004 with a simple mission:
                         to provide exceptional legal representation while treating every client
-                        with dignity and respect. A graduate of Harvard Law School, James has
+                        with dignity and respect. A graduate of Harvard Law School, John has
                         built a reputation as a fierce advocate for his clients' rights.
                       </p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
