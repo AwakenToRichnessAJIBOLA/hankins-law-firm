@@ -4,13 +4,13 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const attorneys = [
   {
-    name: "James Hankins",
+    name: "John Hankins",
     title: "Founding Partner",
     image: import.meta.env.BASE_URL + "lovable-uploads/6ff312ee-8727-42f0-807f-02342b900471.png", // Founder image
     specialties: ["Personal Injury", "Civil Litigation", "Trial Advocacy"],
     education: ["Harvard Law School, J.D.", "Yale University, B.A."],
     barAdmissions: ["State Bar (2003)", "Federal Court (2004)"],
-    bio: "James founded Hankins Law Firm with a commitment to providing exceptional legal representation. With over 20 years of experience, he has successfully represented hundreds of clients in complex litigation matters."
+    bio: "John founded Hankins Law Firm with a commitment to providing exceptional legal representation. With over 20 years of experience, he has successfully represented hundreds of clients in complex litigation matters."
   },
   {
     name: "Sarah Mitchell",
