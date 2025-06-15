@@ -37,21 +37,25 @@ const TestimonialsPreview = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="glass-effect border-teal-100 premium-shadow animate-fade-in" style={{ animationDelay: `${0.1 * index}s`, animationFillMode:'both' }}>
+            <Card 
+              key={index}
+              className="bg-gradient-to-br from-teal-400 via-cyan-400 to-blue-400 border-transparent premium-shadow animate-fade-in"
+              style={{ animationDelay: `${0.1 * index}s`, animationFillMode:'both' }}
+            >
               <CardContent className="p-8">
-                <div className="text-teal-400 text-4xl mb-4">"</div>
-                <p className="text-teal-800 mb-6 italic text-lg">
+                <div className="text-white text-4xl mb-4">"</div>
+                <p className="text-white mb-6 italic text-lg drop-shadow">
                   {testimonial.text}
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-teal-700 font-semibold">
+                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">
                       {testimonial.name.charAt(0)}
                     </span>
                   </div>
                   <div>
-                    <p className="font-semibold text-teal-800">{testimonial.name}</p>
-                    <p className="text-sm text-teal-600">{testimonial.case}</p>
+                    <p className="font-semibold text-white">{testimonial.name}</p>
+                    <p className="text-sm text-white/80">{testimonial.case}</p>
                   </div>
                 </div>
               </CardContent>
@@ -72,3 +76,4 @@ const TestimonialsPreview = () => {
 };
 
 export default TestimonialsPreview;
+
