@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -9,75 +10,76 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 animate-fade-in">
       <div className="container mx-auto px-2 sm:px-4">
-        <div className="flex items-center justify-between h-20 sm:h-24 md:h-32">
+        <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-32">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-1 sm:space-x-2 md:space-x-3 group flex-shrink-0">
-            <div className="flex flex-col items-center sm:flex-row sm:items-center sm:space-x-2 md:space-x-3">
+          <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group flex-shrink-0 min-w-0">
+            <div className="flex items-center space-x-2 sm:space-x-3">
               <img
                 src={logoSrc}
                 alt="Hankins Law Firm logo"
-                className="h-12 w-12 sm:h-16 sm:w-16 md:h-40 md:w-40 object-contain group-hover:scale-105 transition-transform"
+                className="h-12 w-12 sm:h-16 sm:w-16 md:h-24 md:w-24 lg:h-32 lg:w-32 object-contain group-hover:scale-105 transition-transform flex-shrink-0"
               />
-              <div className="text-center sm:text-left min-w-0">
-                <h1 className="font-display font-bold text-xs sm:text-sm md:text-2xl text-teal-800 group-hover:text-teal-600 transition-colors leading-tight">
+              <div className="min-w-0 flex-shrink">
+                <h1 className="font-display font-bold text-xs sm:text-sm md:text-lg lg:text-2xl text-teal-800 group-hover:text-teal-600 transition-colors leading-tight whitespace-nowrap truncate">
                   Hankins Law Firm
                 </h1>
-                <p className="text-xs text-teal-600 -mt-0.5 sm:hidden">Fighting for Justice</p>
-                <p className="text-xs text-teal-600 -mt-1 hidden sm:block">Fighting for Justice</p>
+                <p className="text-xs sm:text-xs md:text-sm text-teal-600 leading-tight whitespace-nowrap truncate hidden xs:block">
+                  Fighting for Justice
+                </p>
               </div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
+          <nav className="hidden lg:flex space-x-6 xl:space-x-8">
             <Link
               to="/"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               About Us
             </Link>
             <Link
               to="/practice-areas"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               Practice Areas
             </Link>
             <Link
               to="/testimonials"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               Testimonials
             </Link>
             <Link
               to="/attorneys"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               Attorneys
             </Link>
             <Link
               to="/blog"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               Resources
             </Link>
             <Link
               to="/contact"
-              className="text-teal-800 hover:text-teal-600 font-medium transition-colors"
+              className="text-teal-800 hover:text-teal-600 font-medium transition-colors whitespace-nowrap"
             >
               Contact
             </Link>
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block flex-shrink-0">
             <Link to="/contact" className="hover-scale">
-              <Button className="teal-gradient text-white font-semibold hover:opacity-90">
+              <Button className="teal-gradient text-white font-semibold hover:opacity-90 whitespace-nowrap">
                 Free Consultation
               </Button>
             </Link>
