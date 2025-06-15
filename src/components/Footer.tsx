@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { linkedin, facebook } from "lucide-react";
+import { Linkedin, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -51,10 +51,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-300">
-              <p>123 Justice Street</p>
-              <p>Legal District, LD 12345</p>
-              <p>Phone: (555) 123-LAWS</p>
-              <p>Email: info@hankinslaw.com</p>
+              <p>Barr. John Hankins, ESQ</p>
+              <p>Hankins Law Firm</p>
+              <p>Phone: +44 7418 318124</p>
+              <p>Email: JohnHankins@consultant.com</p>
             </div>
           </div>
 
@@ -80,10 +80,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-4 mb-4 md:mb-0">
               <Button variant="ghost" size="icon" className="text-gray-300 hover:text-gold-400">
-                <linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="text-gray-300 hover:text-gold-400">
-                <facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </Button>
             </div>
             <div className="text-center md:text-right text-gray-300 text-sm">

@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -58,9 +57,8 @@ const Contact = () => {
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-navy-900 mb-4">Office Location</h3>
                       <p className="text-gray-600">
-                        123 Justice Street<br />
-                        Legal District, LD 12345<br />
-                        United States
+                        Hankins Law Firm<br />
+                        United Kingdom
                       </p>
                     </CardContent>
                   </Card>
@@ -69,9 +67,15 @@ const Contact = () => {
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-navy-900 mb-4">Contact Information</h3>
                       <div className="space-y-2 text-gray-600">
-                        <p><strong>Phone:</strong> (555) 123-LAWS</p>
-                        <p><strong>Email:</strong> info@hankinslaw.com</p>
-                        <p><strong>Fax:</strong> (555) 123-4568</p>
+                        <p>
+                          <strong>Name:</strong> Barr. John Hankins, ESQ
+                        </p>
+                        <p>
+                          <strong>Phone:</strong> +44 7418 318124
+                        </p>
+                        <p>
+                          <strong>Email:</strong> JohnHankins@consultant.com
+                        </p>
                       </div>
                     </CardContent>
                   </Card>

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { gavel, home } from "lucide-react";
+import { Gavel } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 gold-gradient rounded-full flex items-center justify-center">
-              <gavel className="h-6 w-6 text-navy-900" />
+              <Gavel className="h-6 w-6 text-navy-900" />
             </div>
             <div>
               <h1 className="font-display font-bold text-2xl text-navy-900">
