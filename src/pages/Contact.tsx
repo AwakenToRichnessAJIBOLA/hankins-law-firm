@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -59,7 +58,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-navy-900 mb-4">Office Location</h3>
                       <p className="text-gray-600">
                         Hankins Law Firm<br />
-                        United Kingdom
+                        Lincoln’s Inn, 12 Stone Buildings, London WC2A 3TH, United Kingdom
                       </p>
                     </CardContent>
                   </Card>
@@ -202,4 +201,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
