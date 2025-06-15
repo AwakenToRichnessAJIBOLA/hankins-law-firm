@@ -2,13 +2,12 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
     <footer className="blue-gradient text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="font-display font-bold text-xl mb-4">Hankins Law Firm</h3>
@@ -55,23 +54,6 @@ const Footer = () => {
               <p>Hankins Law Firm</p>
               <p>Phone: +44 7418 318124</p>
               <p>Email: JohnHankins@consultant.com</p>
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Newsletter</h4>
-            <p className="text-gray-300 mb-4 text-sm">
-              Stay updated with legal insights and firm news.
-            </p>
-            <div className="flex space-x-2">
-              <Input
-                placeholder="Your email"
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
-              />
-              <Button className="teal-gradient text-white font-semibold">
-                Subscribe
-              </Button>
             </div>
           </div>
         </div>
