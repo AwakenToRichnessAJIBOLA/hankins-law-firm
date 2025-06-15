@@ -11,13 +11,13 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 animate-fade-in">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
               src={logoSrc}
               alt="Hankins Law Firm logo"
-              className="h-14 w-14 object-contain group-hover:scale-105 transition-transform"
+              className="h-20 w-20 object-contain group-hover:scale-105 transition-transform"
             />
             <div>
               <h1 className="font-display font-bold text-2xl text-teal-800 group-hover:text-teal-600 transition-colors">
