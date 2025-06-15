@@ -1,3 +1,4 @@
+
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -183,7 +184,8 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Map Section */}
+        {/* Map Section - REMOVED */}
+        {/* 
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
             <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
@@ -193,9 +195,11 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        */}
       </div>
     </Layout>
   );
 };
 
 export default Contact;
+
