@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const logoSrc = `${import.meta.env.BASE_URL}lovable-uploads/c8591f01-479e-4e11-b2bd-a98676f503fa.png`;
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 animate-fade-in">
@@ -14,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="/lovable-uploads/c8591f01-479e-4e11-b2bd-a98676f503fa.png"
+              src={logoSrc}
               alt="Hankins Law Firm logo"
               className="h-14 w-14 object-contain group-hover:scale-105 transition-transform"
             />
