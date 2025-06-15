@@ -15,7 +15,8 @@ const attorneys = [
   {
     name: "Sarah Mitchell",
     title: "Senior Associate",
-    image: "https://images.unsplash.com/photo-1494790108755-2616c8e62db4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+-    image: "https://images.unsplash.com/photo-1494790108755-2616c8e62db4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
++    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
     specialties: ["Family Law", "Divorce", "Child Custody"],
     education: ["Stanford Law School, J.D.", "UC Berkeley, B.A."],
     barAdmissions: ["State Bar (2010)", "Family Court (2011)"],
