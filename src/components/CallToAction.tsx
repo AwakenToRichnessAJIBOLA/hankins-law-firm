@@ -19,13 +19,6 @@ const CallToAction = () => {
               Schedule Free Consultation
             </Button>
           </Link>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-white border-white hover:bg-white hover:text-navy-900 text-lg px-8 py-4"
-          >
-            Call (555) 123-LAWS
-          </Button>
         </div>
       </div>
     </section>
@@ -33,3 +26,4 @@ const CallToAction = () => {
 };
 
 export default CallToAction;
+
