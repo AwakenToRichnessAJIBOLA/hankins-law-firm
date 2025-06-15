@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 premium-gradient text-white animate-fade-in">
+    <section className="py-20 teal-gradient text-white animate-fade-in">
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-display text-4xl font-bold mb-6 animate-slide-up">
           Ready to Get Started?
@@ -15,7 +15,7 @@ const CallToAction = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/contact" className="hover-scale">
-            <Button size="lg" className="blue-gradient text-white font-bold text-lg px-8 py-4 shadow-lg hover:opacity-90">
+            <Button size="lg" className="teal-gradient text-white font-bold text-lg px-8 py-4 shadow-lg hover:opacity-90">
               Schedule Free Consultation
             </Button>
           </Link>
