@@ -1,7 +1,8 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Gavel } from "lucide-react";
+// Removed: import { Gavel } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,8 +13,29 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 teal-gradient rounded-full flex items-center justify-center shadow group-hover:scale-105 transition-transform">
-              <Gavel className="h-6 w-6 text-white" />
+            <div className="w-12 h-12 teal-gradient rounded-full flex items-center justify-center shadow group-hover:scale-105 transition-transform">
+              {/* Elegant Law Themed Logo SVG */}
+              <svg
+                viewBox="0 0 44 44"
+                fill="none"
+                className="w-8 h-8"
+                aria-label="Hankins Law Firm logo"
+              >
+                <circle cx="22" cy="22" r="21" fill="url(#paint0_linear)" stroke="white" strokeWidth="2"/>
+                <g>
+                  <path d="M22 30V15" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M16 37c0-6.627 4.253-12 6-12s6 5.373 6 12" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M14 19h16l-8 8-8-8z" fill="white" fillOpacity=".18" />
+                  <ellipse cx="22" cy="13.5" rx="4" ry="2.5" fill="white" fillOpacity=".8"/>
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#14b8a6"/>
+                    <stop offset="0.6" stopColor="#0ea5e9"/>
+                    <stop offset="1" stopColor="#99f6e4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <div>
               <h1 className="font-display font-bold text-2xl text-teal-800 group-hover:text-teal-600 transition-colors">
@@ -114,3 +136,4 @@ const Header = () => {
 };
 
 export default Header;
+
