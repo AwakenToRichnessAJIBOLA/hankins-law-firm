@@ -33,12 +33,9 @@ const Hero = () => {
           <Link to="/about" className="hover-scale">
             <Button
               size="lg"
-              variant="outline"
-              className="text-lg px-8 py-4 shadow border-white bg-white/10 hover:bg-white/20"
+              className="teal-gradient text-white font-bold text-lg px-8 py-4 shadow-md hover:opacity-90"
             >
-              <span className="bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 bg-clip-text text-transparent font-bold">
-                Learn About Our Firm
-              </span>
+              Learn About Our Firm
             </Button>
           </Link>
         </div>
