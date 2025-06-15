@@ -28,37 +28,39 @@ const practiceAreas = [
 
 const PracticeAreasPreview = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl font-bold text-navy-900 mb-4">
+          <h2 className="font-display text-4xl font-bold text-blue-900 mb-4">
             Our Practice Areas
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-700 max-w-2xl mx-auto">
             We provide comprehensive legal services across multiple practice areas,
             ensuring expert representation for all your legal needs.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {practiceAreas.map((area) => (
-            <Card key={area.title} className="hover-lift premium-shadow bg-white">
-              <CardHeader className="text-center">
-                <div className="text-4xl mb-4">{area.icon}</div>
-                <CardTitle className="text-xl font-bold text-navy-900">
-                  {area.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">{area.description}</p>
-              </CardContent>
-            </Card>
+          {practiceAreas.map((area, i) => (
+            <div key={area.title} className="hover-lift transition-shadow duration-200">
+              <Card className="glass-effect border-blue-100 shadow-lg animate-fade-in" style={{ animationDelay: `${0.07 * i}s`, animationFillMode:'both' }}>
+                <CardHeader className="text-center">
+                  <div className="text-4xl mb-4">{area.icon}</div>
+                  <CardTitle className="text-xl font-bold text-blue-900">
+                    {area.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-blue-700 text-center">{area.description}</p>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
 
         <div className="text-center">
-          <Link to="/practice-areas">
-            <Button className="bg-navy-700 hover:bg-navy-800 text-white font-semibold px-8 py-3">
+          <Link to="/practice-areas" className="hover-scale">
+            <Button className="blue-gradient text-white font-semibold px-8 py-3 shadow-lg">
               View All Practice Areas
             </Button>
           </Link>
