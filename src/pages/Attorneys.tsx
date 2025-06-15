@@ -1,3 +1,4 @@
+
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -5,7 +6,7 @@ const attorneys = [
   {
     name: "James Hankins",
     title: "Founding Partner",
-    image: "/lovable-uploads/6ff312ee-8727-42f0-807f-02342b900471.png", // Founder image
+    image: import.meta.env.BASE_URL + "lovable-uploads/6ff312ee-8727-42f0-807f-02342b900471.png", // Founder image
     specialties: ["Personal Injury", "Civil Litigation", "Trial Advocacy"],
     education: ["Harvard Law School, J.D.", "Yale University, B.A."],
     barAdmissions: ["State Bar (2003)", "Federal Court (2004)"],
@@ -14,7 +15,7 @@ const attorneys = [
   {
     name: "Sarah Mitchell",
     title: "Senior Associate",
-    image: "/lovable-uploads/d46e56ac-58a0-411d-9310-40119f2dee73.png", // Solo female image
+    image: import.meta.env.BASE_URL + "lovable-uploads/d46e56ac-58a0-411d-9310-40119f2dee73.png", // Solo female image
     specialties: ["Family Law", "Divorce", "Child Custody"],
     education: ["Stanford Law School, J.D.", "UC Berkeley, B.A."],
     barAdmissions: ["State Bar (2010)", "Family Court (2011)"],
@@ -23,7 +24,7 @@ const attorneys = [
   {
     name: "Michael Rodriguez",
     title: "Associate Attorney",
-    image: "/lovable-uploads/f7f6a73d-beb5-4db7-96e9-0ee16464e0d7.png", // Provided male professional image
+    image: import.meta.env.BASE_URL + "lovable-uploads/f7f6a73d-beb5-4db7-96e9-0ee16464e0d7.png", // Provided male professional image
     specialties: ["Estate Planning", "Wills & Trusts", "Probate"],
     education: ["Georgetown Law, J.D.", "Duke University, B.A."],
     barAdmissions: ["State Bar (2015)", "Probate Court (2016)"],
@@ -179,3 +180,4 @@ const Attorneys = () => {
 };
 
 export default Attorneys;
+
