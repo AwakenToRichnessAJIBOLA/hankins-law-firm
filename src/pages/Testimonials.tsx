@@ -1,6 +1,7 @@
 
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const testimonials = [
   {
@@ -110,15 +111,19 @@ const Testimonials = () => {
             <div className="max-w-4xl mx-auto">
               <Card className="premium-shadow">
                 <CardContent className="p-8">
-                  <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center mb-6">
-                    <div className="text-center">
-                      <div className="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-navy-900 text-2xl">▶</span>
-                      </div>
-                      <p className="text-gray-600">Video Testimonial - Sarah M.</p>
-                      <p className="text-sm text-gray-500">Personal Injury Case</p>
-                    </div>
-                  </div>
+                  <AspectRatio ratio={16 / 9} className="bg-gray-200 rounded-lg mb-6 overflow-hidden">
+                    {/* Replace the placeholder with a real video player */}
+                    <video
+                      controls
+                      poster={import.meta.env.BASE_URL + "lovable-uploads/d46e56ac-58a0-411d-9310-40119f2dee73.png"}
+                      className="w-full h-full object-cover rounded-lg"
+                    >
+                      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </AspectRatio>
+                  <p className="text-gray-600 text-center mb-2">Video Testimonial - Sarah M.</p>
+                  <p className="text-sm text-gray-500 text-center mb-4">Personal Injury Case</p>
                   <blockquote className="text-center text-xl text-gray-700 italic">
                     "Hankins Law Firm didn't just win my case, they gave me my life back.
                     I can't recommend them highly enough."
@@ -166,3 +171,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
