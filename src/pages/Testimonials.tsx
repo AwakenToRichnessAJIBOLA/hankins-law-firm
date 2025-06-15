@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -96,44 +95,6 @@ const Testimonials = () => {
           </div>
         </section>
 
-        {/* Video Testimonial Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-4xl font-bold text-navy-900 mb-4">
-                Featured Video Testimonial
-              </h2>
-              <p className="text-xl text-gray-600">
-                Hear directly from one of our satisfied clients
-              </p>
-            </div>
-            
-            <div className="max-w-4xl mx-auto">
-              <Card className="premium-shadow">
-                <CardContent className="p-8">
-                  <AspectRatio ratio={16 / 9} className="bg-gray-200 rounded-lg mb-6 overflow-hidden">
-                    {/* Replace the placeholder with a real video player */}
-                    <video
-                      controls
-                      poster={import.meta.env.BASE_URL + "lovable-uploads/d46e56ac-58a0-411d-9310-40119f2dee73.png"}
-                      className="w-full h-full object-cover rounded-lg"
-                    >
-                      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </AspectRatio>
-                  <p className="text-gray-600 text-center mb-2">Video Testimonial - Sarah M.</p>
-                  <p className="text-sm text-gray-500 text-center mb-4">Personal Injury Case</p>
-                  <blockquote className="text-center text-xl text-gray-700 italic">
-                    "Hankins Law Firm didn't just win my case, they gave me my life back.
-                    I can't recommend them highly enough."
-                  </blockquote>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* Statistics */}
         <section className="py-20 bg-navy-900 text-white">
           <div className="container mx-auto px-4">
@@ -171,4 +132,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
