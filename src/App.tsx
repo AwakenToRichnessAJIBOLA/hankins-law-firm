@@ -20,7 +20,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* Set basename for GitHub Pages */}
+      <BrowserRouter basename="/hankins-law-firm">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
