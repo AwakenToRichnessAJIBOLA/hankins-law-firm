@@ -36,7 +36,7 @@ const About = () => {
               </div>
               <div className="lg:text-right">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                   alt="Attorney James Hankins"
                   className="rounded-lg premium-shadow w-full max-w-md mx-auto lg:ml-auto"
                 />
@@ -54,7 +54,7 @@ const About = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="md:col-span-1">
                       <img
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="John Hankins, Founding Partner"
                         className="rounded-lg w-full"
                       />

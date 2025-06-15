@@ -5,7 +5,7 @@ const attorneys = [
   {
     name: "James Hankins",
     title: "Founding Partner",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Professional barrister/lawyer
     specialties: ["Personal Injury", "Civil Litigation", "Trial Advocacy"],
     education: ["Harvard Law School, J.D.", "Yale University, B.A."],
     barAdmissions: ["State Bar (2003)", "Federal Court (2004)"],
@@ -14,7 +14,7 @@ const attorneys = [
   {
     name: "Sarah Mitchell",
     title: "Senior Associate",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", // Solo professional woman portrait
     specialties: ["Family Law", "Divorce", "Child Custody"],
     education: ["Stanford Law School, J.D.", "UC Berkeley, B.A."],
     barAdmissions: ["State Bar (2010)", "Family Court (2011)"],
