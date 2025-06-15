@@ -34,9 +34,11 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="text-white border-white hover:bg-white hover:text-teal-700 text-lg px-8 py-4 shadow"
+              className="text-lg px-8 py-4 shadow border-white bg-white/10 hover:bg-white/20"
             >
-              Learn About Our Firm
+              <span className="bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 bg-clip-text text-transparent font-bold">
+                Learn About Our Firm
+              </span>
             </Button>
           </Link>
         </div>

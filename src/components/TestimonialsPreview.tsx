@@ -26,7 +26,7 @@ const TestimonialsPreview = () => {
     <section className="py-20 bg-teal-50 animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl font-bold text-teal-800 mb-4">
+          <h2 className="font-display text-4xl font-bold bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 bg-clip-text text-transparent mb-4">
             What Our Clients Say
           </h2>
           <p className="text-xl text-teal-600 max-w-2xl mx-auto">
