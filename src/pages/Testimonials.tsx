@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const testimonials = [
   {
@@ -78,38 +77,6 @@ const Testimonials = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Statistics */}
-        <section className="py-20 premium-gradient text-white">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold gold-gradient bg-clip-text text-transparent mb-2">
-                  500+
-                </div>
-                <p className="text-gray-300">Cases Won</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold gold-gradient bg-clip-text text-transparent mb-2">
-                  98%
-                </div>
-                <p className="text-gray-300">Client Satisfaction</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold gold-gradient bg-clip-text text-transparent mb-2">
-                  $50M+
-                </div>
-                <p className="text-gray-300">Recovered for Clients</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold gold-gradient bg-clip-text text-transparent mb-2">
-                  20+
-                </div>
-                <p className="text-gray-300">Years Experience</p>
-              </div>
             </div>
           </div>
         </section>
