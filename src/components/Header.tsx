@@ -11,19 +11,22 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 animate-fade-in">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 md:h-32">
+        <div className="flex items-center justify-between h-28 md:h-32">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 md:space-x-3 group flex-shrink-0">
-            <img
-              src={logoSrc}
-              alt="Hankins Law Firm logo"
-              className="h-12 w-12 md:h-40 md:w-40 object-contain group-hover:scale-105 transition-transform"
-            />
-            <div className="min-w-0">
-              <h1 className="font-display font-bold text-sm md:text-2xl text-teal-800 group-hover:text-teal-600 transition-colors whitespace-nowrap">
-                Hankins Law Firm
-              </h1>
-              <p className="text-xs text-teal-600 -mt-1 hidden md:block">Fighting for Justice</p>
+            <div className="flex flex-col items-center md:flex-row md:items-center md:space-x-3">
+              <img
+                src={logoSrc}
+                alt="Hankins Law Firm logo"
+                className="h-16 w-16 md:h-40 md:w-40 object-contain group-hover:scale-105 transition-transform"
+              />
+              <div className="text-center md:text-left min-w-0">
+                <h1 className="font-display font-bold text-sm md:text-2xl text-teal-800 group-hover:text-teal-600 transition-colors whitespace-nowrap">
+                  Hankins Law Firm
+                </h1>
+                <p className="text-xs text-teal-600 -mt-1 md:hidden">Fighting for Justice</p>
+                <p className="text-xs text-teal-600 -mt-1 hidden md:block">Fighting for Justice</p>
+              </div>
             </div>
           </Link>
 
