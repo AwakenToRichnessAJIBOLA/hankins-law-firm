@@ -7,37 +7,31 @@ const testimonials = [
     name: "Sandra T.",
     case: "Personal Injury",
     text: "Hankins Law Firm gave me hope when I had none. After my car accident, I was overwhelmed by medical bills and insurance companies. James and his team fought hard for me and treated me like family throughout the entire process. Forever grateful.",
-    rating: 5
   },
   {
     name: "Michael R.",
     case: "Family Law",
     text: "Going through a divorce was the most difficult time in my life. The attorneys at Hankins Law Firm were professional, compassionate, and incredibly knowledgeable. They guided me through every step with care and secured a fair outcome for me and my children.",
-    rating: 5
   },
   {
     name: "Emma L.",
     case: "Estate Planning",
     text: "The estate planning team was thorough and patient, answering all my questions and ensuring my family's future is secure. They made the complex process simple and gave me peace of mind knowing my affairs are in order.",
-    rating: 5
   },
   {
     name: "Robert K.",
     case: "Civil Litigation",
     text: "When my business partner tried to take advantage of our contract, Hankins Law Firm stepped in and fought for my rights. Their expertise in civil litigation saved my business and my reputation. I couldn't have asked for better representation.",
-    rating: 5
   },
   {
     name: "Maria S.",
     case: "Personal Injury",
     text: "After my slip and fall accident, I wasn't sure if I had a case. The team at Hankins Law Firm took the time to investigate thoroughly and secured a settlement that covered all my medical expenses and lost wages. They truly care about their clients.",
-    rating: 5
   },
   {
     name: "David P.",
     case: "Family Law",
     text: "Child custody cases are emotionally draining, but having Hankins Law Firm by my side made all the difference. They understood what was at stake and fought tirelessly to ensure I could remain an active part of my children's lives.",
-    rating: 5
   }
 ];
 
@@ -70,14 +64,7 @@ const Testimonials = () => {
                       {testimonial.text}
                     </p>
                     
-                    {/* Star Rating */}
-                    <div className="flex mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <span key={i} className="text-gold-500 text-xl">★</span>
-                      ))}
-                    </div>
-                    
-                    <div className="flex items-center">
+                    <div className="flex items-center mt-6">
                       <div className="w-12 h-12 bg-navy-100 rounded-full flex items-center justify-center mr-4">
                         <span className="text-navy-700 font-semibold text-lg">
                           {testimonial.name.charAt(0)}
